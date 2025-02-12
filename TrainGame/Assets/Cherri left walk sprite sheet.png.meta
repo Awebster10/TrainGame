@@ -1,0 +1,831 @@
+fileFormatVersion: 2
+guid: 3847a7ecc68d5c1489c11a5dea2079e1
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 130
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Cherri left walk sprite sheet_0
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 493
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbcf02e89d567594e9fad2d7ab18039f
+      internalID: -1070454148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cherri left walk sprite sheet_1
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 493
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00f462f58d1db114bbe26631f1b89e2d
+      internalID: 1407930104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cherri left walk sprite sheet_2
+      rect:
+        serializedVersion: 2
+        x: 1250
+        y: 493
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da55c7805d6e58641bc05aab40cbf5fe
+      internalID: 485974077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cherri left walk sprite sheet_3
+      rect:
+        serializedVersion: 2
+        x: 1852
+        y: 493
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e2c085488e87274d876212db0a9990d
+      internalID: 1218077194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cherri left walk sprite sheet_4
+      rect:
+        serializedVersion: 2
+        x: 2450
+        y: 493
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 632bb1d9903755346b0af3dfafb98587
+      internalID: -1176419037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cherri left walk sprite sheet_5
+      rect:
+        serializedVersion: 2
+        x: 3050
+        y: 493
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31aecf3d871dc2d4fa5d9f314cfda123
+      internalID: 820255288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cherri left walk sprite sheet_6
+      rect:
+        serializedVersion: 2
+        x: 3650
+        y: 493
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fa7358fcd2a3e947a98488326d1b6b3
+      internalID: -939489155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cherri left walk sprite sheet_7
+      rect:
+        serializedVersion: 2
+        x: 4250
+        y: 493
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7435abc12d0a40649b6f81a57fe20034
+      internalID: -810129813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cherri left walk sprite sheet_8
+      rect:
+        serializedVersion: 2
+        x: 4850
+        y: 493
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c6f6b5768e844243bd8747b55793aa0
+      internalID: -1382120419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cherri left walk sprite sheet_9
+      rect:
+        serializedVersion: 2
+        x: 5450
+        y: 493
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eef33e4a37618904ba26a95a8daf327e
+      internalID: -1902085798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cherri left walk sprite sheet_10
+      rect:
+        serializedVersion: 2
+        x: 6050
+        y: 493
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf0b2f178081da54095422e548b88198
+      internalID: -2104389488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cherri left walk sprite sheet_11
+      rect:
+        serializedVersion: 2
+        x: 6650
+        y: 493
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2246778973333bc40a100d8215a550c0
+      internalID: -2064736348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cherri left walk sprite sheet_12
+      rect:
+        serializedVersion: 2
+        x: 7250
+        y: 493
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb6e242f5a9aa904ba2b484b34297d6e
+      internalID: -33032922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cherri left walk sprite sheet_13
+      rect:
+        serializedVersion: 2
+        x: 7850
+        y: 493
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c06f4d7550ea2647a4494b9e4ef93eb
+      internalID: 1416227418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cherri left walk sprite sheet_14
+      rect:
+        serializedVersion: 2
+        x: 8450
+        y: 493
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c88e9d81c5f1f14d915207d46b549e0
+      internalID: -302056087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cherri left walk sprite sheet_15
+      rect:
+        serializedVersion: 2
+        x: 9050
+        y: 493
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6df4e424c4242dc43a07cf1ad680e2be
+      internalID: 1739023832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cherri left walk sprite sheet_16
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 270
+        width: 98
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2a51592f93f6e24f962b254d6e37f2e
+      internalID: -606363558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cherri left walk sprite sheet_17
+      rect:
+        serializedVersion: 2
+        x: 851
+        y: 270
+        width: 98
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e2cb229d46cd10438281f2c544a8682
+      internalID: 158842733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cherri left walk sprite sheet_18
+      rect:
+        serializedVersion: 2
+        x: 1451
+        y: 270
+        width: 98
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d940192dd039f44c870db48e5e67094
+      internalID: -1971381633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cherri left walk sprite sheet_19
+      rect:
+        serializedVersion: 2
+        x: 2051
+        y: 271
+        width: 98
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80f5d6d5497e19442a3560887c6867be
+      internalID: -1612786351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cherri left walk sprite sheet_20
+      rect:
+        serializedVersion: 2
+        x: 2651
+        y: 271
+        width: 98
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6d2fa2c5312742458abf0163e2b75c3
+      internalID: 123789497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cherri left walk sprite sheet_21
+      rect:
+        serializedVersion: 2
+        x: 3251
+        y: 271
+        width: 98
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 956152ffe23034940a9d3a678d1e1c8d
+      internalID: -425230693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cherri left walk sprite sheet_22
+      rect:
+        serializedVersion: 2
+        x: 3851
+        y: 270
+        width: 98
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbe7a9f187f88384d88d7a91d3261f5c
+      internalID: 1496131421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cherri left walk sprite sheet_23
+      rect:
+        serializedVersion: 2
+        x: 4451
+        y: 270
+        width: 98
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80f2a9f47478aa540bde69a9e36ee816
+      internalID: 2014560137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cherri left walk sprite sheet_24
+      rect:
+        serializedVersion: 2
+        x: 5051
+        y: 270
+        width: 98
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e817b27cf897a6448f299246eff49dd
+      internalID: -245528843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cherri left walk sprite sheet_25
+      rect:
+        serializedVersion: 2
+        x: 5651
+        y: 270
+        width: 98
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ac3b67f84bdee2419449fb756da7493
+      internalID: 1790779983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cherri left walk sprite sheet_26
+      rect:
+        serializedVersion: 2
+        x: 6251
+        y: 270
+        width: 98
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa96b27b80b851a4fb6f6737d38e6348
+      internalID: -1577285436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cherri left walk sprite sheet_27
+      rect:
+        serializedVersion: 2
+        x: 6851
+        y: 274
+        width: 98
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04c471ef9c9553b40bfe69966ef38601
+      internalID: -2067167897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cherri left walk sprite sheet_28
+      rect:
+        serializedVersion: 2
+        x: 7451
+        y: 270
+        width: 98
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 613ee1332d3b2a345968b49ea33b6a0f
+      internalID: -753816433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cherri left walk sprite sheet_29
+      rect:
+        serializedVersion: 2
+        x: 8051
+        y: 274
+        width: 98
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b29db4d7488d62b47a182b862b24e6d4
+      internalID: -1590848806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cherri left walk sprite sheet_30
+      rect:
+        serializedVersion: 2
+        x: 8651
+        y: 270
+        width: 98
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c40c652d195ba443a8ece62a8b5efd3
+      internalID: -580366327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cherri left walk sprite sheet_31
+      rect:
+        serializedVersion: 2
+        x: 9251
+        y: 270
+        width: 98
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a766db815eacb5b4388b061c6a822fae
+      internalID: 214722926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Cherri left walk sprite sheet_0: -1070454148
+      Cherri left walk sprite sheet_1: 1407930104
+      Cherri left walk sprite sheet_10: -2104389488
+      Cherri left walk sprite sheet_11: -2064736348
+      Cherri left walk sprite sheet_12: -33032922
+      Cherri left walk sprite sheet_13: 1416227418
+      Cherri left walk sprite sheet_14: -302056087
+      Cherri left walk sprite sheet_15: 1739023832
+      Cherri left walk sprite sheet_16: -606363558
+      Cherri left walk sprite sheet_17: 158842733
+      Cherri left walk sprite sheet_18: -1971381633
+      Cherri left walk sprite sheet_19: -1612786351
+      Cherri left walk sprite sheet_2: 485974077
+      Cherri left walk sprite sheet_20: 123789497
+      Cherri left walk sprite sheet_21: -425230693
+      Cherri left walk sprite sheet_22: 1496131421
+      Cherri left walk sprite sheet_23: 2014560137
+      Cherri left walk sprite sheet_24: -245528843
+      Cherri left walk sprite sheet_25: 1790779983
+      Cherri left walk sprite sheet_26: -1577285436
+      Cherri left walk sprite sheet_27: -2067167897
+      Cherri left walk sprite sheet_28: -753816433
+      Cherri left walk sprite sheet_29: -1590848806
+      Cherri left walk sprite sheet_3: 1218077194
+      Cherri left walk sprite sheet_30: -580366327
+      Cherri left walk sprite sheet_31: 214722926
+      Cherri left walk sprite sheet_4: -1176419037
+      Cherri left walk sprite sheet_5: 820255288
+      Cherri left walk sprite sheet_6: -939489155
+      Cherri left walk sprite sheet_7: -810129813
+      Cherri left walk sprite sheet_8: -1382120419
+      Cherri left walk sprite sheet_9: -1902085798
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

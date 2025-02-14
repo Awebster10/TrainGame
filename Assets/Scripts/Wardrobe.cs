@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Wardrobe : MonoBehaviour
 {
+    public GameObject DeathScreen;
+
     void OnTriggerEnter2D(Collider2D collision)
 
     {
@@ -14,6 +16,7 @@ public class Wardrobe : MonoBehaviour
             // Perform actions when colliding with the box
 
             Debug.Log("Died to Wardrobe!");
+            DeathScreen.SetActive(true);
 
         }
 

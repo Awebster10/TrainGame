@@ -4,47 +4,25 @@ using UnityEngine;
 
 public class Movement : MonoBehaviour
 {
-    Rigidbody2D body;
+   public float MoveSpeed = 5f;
 
-   float horizontal;
-   float vertical;
-   float moveLimiter = 0.7f;
+   public Rigidbody2D rb;
    public Animator Animator;
-   public bool walking = false;
 
-   public float runSpeed = 20.0f;
-
-   void Start ()
-   {
-      body = GetComponent<Rigidbody2D>();
-   }
+   Vector2 PlayerMovement;
 
    void Update()
    {
-      // Gives a value between -1 and 1
-      horizontal = Input.GetAxisRaw("Horizontal"); // -1 is left
-      vertical = Input.GetAxisRaw("Vertical"); // -1 is down
+      PlayerMovement.x = Input.GetAxisRaw("Horizontal");
+      PlayerMovement.y = Input.GetAxisRaw("Vertical");
 
-      
+      Animator.SetFloat("Horizontal", PlayerMovement.x);
+      Animator.SetFloat("Vertical", PlayerMovement.y);
+      Animator.SetFloat("Speed", PlayerMovement.sqrMagnitude);
    }
 
    void FixedUpdate()
    {
-      if (horizontal != 0 && vertical != 0) // Check for diagonal movement
-      {
-         // limit movement speed diagonally, so you move at 70% speed
-         horizontal *= moveLimiter;
-         vertical *= moveLimiter;
-      } 
-
-      body.velocity = new Vector2(horizontal * runSpeed, vertical * runSpeed);
-      //Animator.SetBool("Walking", true);
-   }
-
-   void Flip()
-   {
-      Vector3 theScale = transform.localScale;
-		theScale.x *= -1;
-		transform.localScale = theScale;
+      rb.MovePosition(rb.position + PlayerMovement * MoveSpeed * Time.fixedDeltaTime);
    }
 }

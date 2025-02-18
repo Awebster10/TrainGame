@@ -5,9 +5,10 @@ using System.Windows.Input;
 
 public class SpikyCussion : MonoBehaviour
 {
-    public GameObject DeathScreen;
+    public GameObject DeathMessage;
     public GameObject InteractMessage;
     public bool AtCussion = false;
+    public Death death;
 
     void OnTriggerStay2D(Collider2D collision)
     {
@@ -25,10 +26,11 @@ public class SpikyCussion : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.E))
             {
-                    Debug.Log("Hehe");
-                    if(AtCussion == true)
-                    {
-                    DeathScreen.SetActive(true);}
+                if(AtCussion == true)
+                {
+                    DeathMessage.SetActive(true);
+                    death.IsDead = true;
+                }
             }
     }
 }

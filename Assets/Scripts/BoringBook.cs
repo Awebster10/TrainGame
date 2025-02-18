@@ -1,33 +1,34 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.Windows.Input;
 
-public class Luggage : MonoBehaviour
+public class BoringBook : MonoBehaviour
 {
-    public GameObject DeathScreen;
+    public GameObject DeathMessage;
     public GameObject InteractMessage;
-    public bool AtLuggage = false;
+    public bool AtBook = false;
     public Death death;
 
     void OnTriggerStay2D(Collider2D collision)
     {
         InteractMessage.SetActive(true);
-        AtLuggage = true;
+        AtBook = true;
     }
 
     void OnTriggerExit2D(Collider2D collision)
     {
         InteractMessage.SetActive(false);
-        AtLuggage = false;
+        AtBook = false;
     }
 
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.E))
         {
-            if (AtLuggage == true)
+            if (AtBook == true)
             {
-                DeathScreen.SetActive(true);
+                DeathMessage.SetActive(true);
                 death.IsDead = true;
             }
         }

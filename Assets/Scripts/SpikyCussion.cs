@@ -8,6 +8,7 @@ public class SpikyCussion : MonoBehaviour
     public GameObject DeathMessage;
     public GameObject InteractMessage;
     public bool AtCussion = false;
+
     public Death death;
     public AudioSource Stabsound;
 

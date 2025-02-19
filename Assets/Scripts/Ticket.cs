@@ -8,6 +8,7 @@ public class Ticket : MonoBehaviour
     public GameObject InteractMessage;
     public bool AtTicket = false;
     public TicketInspector TicketInspector;
+    public GameObject UI;
 
     void OnTriggerStay2D(Collider2D collision)
     {
@@ -30,6 +31,7 @@ public class Ticket : MonoBehaviour
                 Object.Destroy(this.gameObject);
                 Debug.Log("Ticket");
                 TicketInspector.HasTicket = true;
+                UI.gameObject.SetActive(true);
             }
         }
     }

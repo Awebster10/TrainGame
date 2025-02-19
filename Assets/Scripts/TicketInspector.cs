@@ -7,9 +7,15 @@ public class TicketInspector : MonoBehaviour
 {
     public GameObject DeathMessage;
     public GameObject InteractMessage;
+    public GameObject UI;
+
     public bool AtHim = false;
-    public Death death;
+    public int NumOfVisits = 0;
     public bool HasTicket;
+
+    public Death death;
+
+    public AudioSource Glass;
 
     void OnTriggerStay2D(Collider2D collision)
     {
@@ -31,8 +37,17 @@ public class TicketInspector : MonoBehaviour
                 {
                     if (!HasTicket)
                     {
-                        DeathMessage.SetActive(true);
-                        death.IsDead = true;
+                       if (NumOfVisits == 0)
+                       {
+                           UI.SetActive(true);
+                           NumOfVisits++;
+                       }
+                       else if (NumOfVisits >= 1)
+                       {
+                           DeathMessage.SetActive(true);
+                           death.IsDead = true;
+                           Glass.Play();
+                       }
                     }
                     else
                     {

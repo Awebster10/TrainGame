@@ -9,6 +9,7 @@ public class SpikyCussion : MonoBehaviour
     public GameObject InteractMessage;
     public bool AtCussion = false;
     public Death death;
+    public AudioSource Stabsound;
 
     void OnTriggerStay2D(Collider2D collision)
     {
@@ -30,6 +31,7 @@ public class SpikyCussion : MonoBehaviour
                 {
                     DeathMessage.SetActive(true);
                     death.IsDead = true;
+                    Stabsound.Play();
                 }
             }
     }

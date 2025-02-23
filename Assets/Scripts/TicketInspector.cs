@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System.Windows.Input;
+using UnityEngine.SceneManagement;
 
 public class TicketInspector : MonoBehaviour
 {
@@ -51,7 +52,8 @@ public class TicketInspector : MonoBehaviour
                     else
                     {
                     Debug.Log("Level Passed");
-                    }
+                    SceneManager.LoadScene(1);
+                }
                 }
             }
     }

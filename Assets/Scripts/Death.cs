@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class Death : MonoBehaviour
 {
@@ -17,5 +18,10 @@ public class Death : MonoBehaviour
         Message.text = TheMessage;
         DeathScreen.SetActive(true);
         movement.enabled = false;
+    }
+
+    public void Reset()
+    {
+        SceneManager.LoadScene(0);
     }
 }

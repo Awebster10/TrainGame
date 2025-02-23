@@ -3179,10 +3179,11 @@ MonoBehaviour:
   Message: {fileID: 768877199}
   AtBird: 0
   IsBirdDead: 0
+  HasBird: 0
   animator: {fileID: 1133460594}
   cherry: {fileID: 1263577437}
   death: {fileID: 1170638221}
-  InteractiveMessage: {fileID: 0}
+  InteractiveMessage: {fileID: 12483309}
 --- !u!61 &1133460593
 BoxCollider2D:
   m_ObjectHideFlags: 0

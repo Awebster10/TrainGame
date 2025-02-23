@@ -6,19 +6,19 @@ using System.Windows.Input;
 public class BoringBook : MonoBehaviour
 {
     public GameObject DeathMessage;
-    public GameObject InteractMessage;
+    public KeyPress keyPress;
     public bool AtBook = false;
     public Death death;
 
     void OnTriggerStay2D(Collider2D collision)
     {
-        InteractMessage.SetActive(true);
+        keyPress.DisplayMessage("Press E To read the book");
         AtBook = true;
     }
 
     void OnTriggerExit2D(Collider2D collision)
     {
-        InteractMessage.SetActive(false);
+        keyPress.RemoveMessage();
         AtBook = false;
     }
 

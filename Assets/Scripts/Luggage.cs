@@ -5,19 +5,19 @@ using UnityEngine;
 public class Luggage : MonoBehaviour
 {
     public GameObject DeathScreen;
-    public GameObject InteractMessage;
+    public KeyPress keyPress;
     public bool AtLuggage = false;
     public Death death;
 
     void OnTriggerStay2D(Collider2D collision)
     {
-        InteractMessage.SetActive(true);
+        keyPress.DisplayMessage("Press E To open Luggage");
         AtLuggage = true;
     }
 
     void OnTriggerExit2D(Collider2D collision)
     {
-        InteractMessage.SetActive(false);
+        keyPress.RemoveMessage();
         AtLuggage = false;
     }
 

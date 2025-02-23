@@ -5,19 +5,19 @@ using System.Windows.Input;
 
 public class Suitcase : MonoBehaviour
 {
-    public GameObject InteractMessage;
+    public KeyPress keyPress;
     public GameObject Ticket;
     public bool AtSuitcase = false;
 
     void OnTriggerStay2D(Collider2D collision)
     {
-        InteractMessage.SetActive(true);
+        keyPress.DisplayMessage("Press E To open suitcase");
         AtSuitcase = true;
     }
 
     void OnTriggerExit2D(Collider2D collision)
     {
-        InteractMessage.SetActive(false);
+        keyPress.RemoveMessage();
         AtSuitcase = false;
     }
 

@@ -5,21 +5,20 @@ using System.Windows.Input;
 
 public class Ticket : MonoBehaviour
 {
-    public GameObject InteractMessage;
+    public KeyPress keyPress;
     public bool AtTicket = false;
     public TicketInspector TicketInspector;
-    public GameObject UI;
     public InteractiveMessage InteractiveMessage;
 
     void OnTriggerStay2D(Collider2D collision)
     {
-        InteractMessage.SetActive(true);
+        keyPress.DisplayMessage("Press E to Pick Ticket up");
         AtTicket = true;
     }
 
     void OnTriggerExit2D(Collider2D collision)
     {
-        InteractMessage.SetActive(false);
+        keyPress.RemoveMessage();
         AtTicket = false;
     }
 

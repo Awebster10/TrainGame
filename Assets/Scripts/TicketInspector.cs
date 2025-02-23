@@ -6,7 +6,7 @@ using System.Windows.Input;
 public class TicketInspector : MonoBehaviour
 {
     public GameObject DeathMessage;
-    public GameObject InteractMessage;
+    public KeyPress keyPress;
 
     public bool AtHim = false;
     public int NumOfVisits = 0;
@@ -19,13 +19,13 @@ public class TicketInspector : MonoBehaviour
 
     void OnTriggerStay2D(Collider2D collision)
     {
-        InteractMessage.SetActive(true);
+        keyPress.DisplayMessage("Press E to Speak to the Inspector");
         AtHim = true;
     }
 
     void OnTriggerExit2D(Collider2D collision)
     {
-        InteractMessage.SetActive(false);
+        keyPress.RemoveMessage();
         AtHim = false;
     }
 
@@ -37,17 +37,17 @@ public class TicketInspector : MonoBehaviour
                 {
                     if (!HasTicket)
                     {
-                       if (NumOfVisits == 0)
-                       {
+                        if (NumOfVisits == 0)
+                        {
                             InteractiveMessage.DisplayMessage("He says dont come back to him without a ticket or else!");
-                           NumOfVisits++;
-                       }
-                       else if (NumOfVisits >= 1)
-                       {
-                           DeathMessage.SetActive(true);
-                           death.IsDead = true;
-                           Glass.Play();
-                       }
+                            NumOfVisits++;
+                        }
+                        else if (NumOfVisits >= 1)
+                        {
+                            DeathMessage.SetActive(true);
+                            death.IsDead = true;
+                            Glass.Play();
+                        }
                     }
                     else
                     {

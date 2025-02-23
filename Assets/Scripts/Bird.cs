@@ -18,16 +18,19 @@ public class Bird : MonoBehaviour
     public Cherry cherry;
     public Death death;
     public InteractiveMessage InteractiveMessage;
+    public KeyPress keyPress;
 
     void OnTriggerStay2D(Collider2D collision)
     {
-        InteractMessage.SetActive(true);
+        keyPress.DisplayMessage("Press E to Interact with Bird");
+        //InteractMessage.SetActive(true);
         AtBird = true;
     }
 
     void OnTriggerExit2D(Collider2D collision)
     {
-        InteractMessage.SetActive(false);
+        keyPress.RemoveMessage();
+        //InteractMessage.SetActive(false);
         AtBird = false;
     }
 

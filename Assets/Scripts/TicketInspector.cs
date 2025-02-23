@@ -5,7 +5,6 @@ using System.Windows.Input;
 
 public class TicketInspector : MonoBehaviour
 {
-    public GameObject DeathMessage;
     public KeyPress keyPress;
 
     public bool AtHim = false;
@@ -44,9 +43,9 @@ public class TicketInspector : MonoBehaviour
                         }
                         else if (NumOfVisits >= 1)
                         {
-                            DeathMessage.SetActive(true);
-                            death.IsDead = true;
+                            death.Died("The Inspector doesnt take nicely to people boarding without a ticket. He thre you out a window. Bit brutal aint it?");
                             Glass.Play();
+                            Object.Destroy(this.gameObject);
                         }
                     }
                     else

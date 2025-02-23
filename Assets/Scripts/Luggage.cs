@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class Luggage : MonoBehaviour
 {
-    public GameObject DeathScreen;
     public KeyPress keyPress;
     public bool AtLuggage = false;
     public Death death;
@@ -27,8 +26,8 @@ public class Luggage : MonoBehaviour
         {
             if (AtLuggage == true)
             {
-                DeathScreen.SetActive(true);
-                death.IsDead = true;
+                death.Died("That Suitcase had a bomb in it- did you not know that?");
+                Object.Destroy(this.gameObject);
             }
         }
     }

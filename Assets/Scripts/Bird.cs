@@ -6,8 +6,6 @@ using TMPro;
 
 public class Bird : MonoBehaviour
 {
-    public GameObject DeathMessage;
-    public GameObject InteractMessage;
     public TextMeshProUGUI Message;
     public bool AtBird = false;
     public bool IsBirdDead = false;
@@ -23,14 +21,12 @@ public class Bird : MonoBehaviour
     void OnTriggerStay2D(Collider2D collision)
     {
         keyPress.DisplayMessage("Press E to Interact with Bird");
-        //InteractMessage.SetActive(true);
         AtBird = true;
     }
 
     void OnTriggerExit2D(Collider2D collision)
     {
         keyPress.RemoveMessage();
-        //InteractMessage.SetActive(false);
         AtBird = false;
     }
 
@@ -44,8 +40,8 @@ public class Bird : MonoBehaviour
                 {
                     if (cherry.HasCherry == false)
                     {
-                        DeathMessage.SetActive(true);
-                        death.IsDead = true;
+                        Object.Destroy(this.gameObject);
+                        death.Died("Why on earth would you pet a random bird? It pecked your eyes out and is eating them- it loves to eat stuff...");
                     }
                     else
                     {

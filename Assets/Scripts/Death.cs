@@ -1,21 +1,21 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class Death : MonoBehaviour
 {
     public GameObject DeathScreen;
     public Movement movement;
-    public bool IsDead;
+    public bool ISit;
     public KeyPress keyPress;
+    public TextMeshProUGUI Message;
 
-    void Update()
+    public void Died(string TheMessage)
     {
-        if(IsDead == true)
-        {
-            keyPress.RemoveMessage();
-            DeathScreen.SetActive(true);
-            movement.enabled = false;
-        }
+        keyPress.RemoveMessage();
+        Message.text = TheMessage;
+        DeathScreen.SetActive(true);
+        movement.enabled = false;
     }
 }

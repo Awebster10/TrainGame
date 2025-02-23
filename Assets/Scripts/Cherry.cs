@@ -8,7 +8,6 @@ public class Cherry : MonoBehaviour
     public bool AtCherry = false;
     public bool HasCherry = false;
 
-    public GameObject DeathMessage;
     public Death death;
     public KeyPress keyPress;
     public InteractiveMessage InteractiveMessage;
@@ -40,8 +39,8 @@ public class Cherry : MonoBehaviour
         {
             if (AtCherry == true)
             {
-                DeathMessage.SetActive(true);
-                death.IsDead = true;
+                Object.Destroy(this.gameObject);
+                death.Died("Why on earth would you eat a random berry you found? Anyway yeah it messed your insides out- your dead buddy.");
             }
         }
     }

@@ -5,7 +5,6 @@ using System.Windows.Input;
 
 public class SpikyCussion : MonoBehaviour
 {
-    public GameObject DeathMessage;
     public bool AtCussion = false;
 
     public Death death;
@@ -30,9 +29,9 @@ public class SpikyCussion : MonoBehaviour
         {
             if(AtCussion == true)
             {
-                DeathMessage.SetActive(true);
-                death.IsDead = true;
+                death.Died("You were Impaled by the Spiky cussion you foolishly decided to sit on");
                 Stabsound.Play();
+                Object.Destroy(this.gameObject);
             }
         }
     }

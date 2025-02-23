@@ -5,7 +5,6 @@ using System.Windows.Input;
 
 public class BoringBook : MonoBehaviour
 {
-    public GameObject DeathMessage;
     public KeyPress keyPress;
     public bool AtBook = false;
     public Death death;
@@ -28,8 +27,8 @@ public class BoringBook : MonoBehaviour
         {
             if (AtBook == true)
             {
-                DeathMessage.SetActive(true);
-                death.IsDead = true;
+                death.Died("That book was so boring it literally killed you. Haha fancy the odds of that");
+                Object.Destroy(this.gameObject);
             }
         }
     }

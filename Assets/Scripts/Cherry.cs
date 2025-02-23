@@ -11,7 +11,10 @@ public class Cherry : MonoBehaviour
 
     public GameObject DeathMessage;
     public Death death;
-    public GameObject UI;
+    //public GameObject UI;
+    public InteractiveMessage InteractiveMessage;
+    private string TheMessage = ("You didnt want to eat the lovely cherry? Thats fine I guess, you may need it later...");
+
 
     void OnTriggerStay2D(Collider2D collision)
     {
@@ -33,7 +36,7 @@ public class Cherry : MonoBehaviour
             {
                 HasCherry = true;
                 Object.Destroy(this.gameObject);
-                UI.SetActive(true);
+                InteractiveMessage.DisplayMessage(TheMessage);
             }
         }
         else if (Input.GetKeyDown(KeyCode.F))

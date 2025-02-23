@@ -16,6 +16,7 @@ public class Bird : MonoBehaviour
 
     public Cherry cherry;
     public Death death;
+    public InteractiveMessage InteractiveMessage;
 
     void OnTriggerStay2D(Collider2D collision)
     {

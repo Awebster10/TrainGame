@@ -9,6 +9,7 @@ public class Ticket : MonoBehaviour
     public bool AtTicket = false;
     public TicketInspector TicketInspector;
     public GameObject UI;
+    public InteractiveMessage InteractiveMessage;
 
     void OnTriggerStay2D(Collider2D collision)
     {
@@ -29,9 +30,9 @@ public class Ticket : MonoBehaviour
             if (AtTicket == true)
             {
                 Object.Destroy(this.gameObject);
-                Debug.Log("Ticket");
                 TicketInspector.HasTicket = true;
-                UI.gameObject.SetActive(true);
+                InteractiveMessage.DisplayMessage("You aquired a Train ticket- You might be able to get past the Instructor now!");
+
             }
         }
     }

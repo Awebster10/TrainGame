@@ -7,13 +7,13 @@ public class TicketInspector : MonoBehaviour
 {
     public GameObject DeathMessage;
     public GameObject InteractMessage;
-    public GameObject UI;
 
     public bool AtHim = false;
     public int NumOfVisits = 0;
     public bool HasTicket;
 
     public Death death;
+    public InteractiveMessage InteractiveMessage;
 
     public AudioSource Glass;
 
@@ -39,7 +39,7 @@ public class TicketInspector : MonoBehaviour
                     {
                        if (NumOfVisits == 0)
                        {
-                           UI.SetActive(true);
+                            InteractiveMessage.DisplayMessage("He says dont come back to him without a ticket or else!");
                            NumOfVisits++;
                        }
                        else if (NumOfVisits >= 1)

@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SaveData : MonoBehaviour
+public class DontDestroyRefine : MonoBehaviour
 {
-    public static bool IsBirdDead;
+    public GameObject AllItems;
 }

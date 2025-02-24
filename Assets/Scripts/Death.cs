@@ -12,6 +12,8 @@ public class Death : MonoBehaviour
     public KeyPress keyPress;
     public TextMeshProUGUI Message;
 
+    public Bird Bird;
+
     public void Died(string TheMessage)
     {
         keyPress.RemoveMessage();
@@ -20,7 +22,7 @@ public class Death : MonoBehaviour
         movement.enabled = false;
     }
 
-    public void Reset()
+    public void Restart()
     {
         SceneManager.LoadScene(0);
     }

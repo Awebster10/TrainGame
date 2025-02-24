@@ -31,7 +31,7 @@ public class SpikyCussion : MonoBehaviour
             {
                 death.Died("You were Impaled by the Spiky cussion you foolishly decided to sit on");
                 Stabsound.Play();
-                Object.Destroy(this.gameObject);
+                //Object.Destroy(this.gameObject);
             }
         }
     }

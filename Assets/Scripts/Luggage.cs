@@ -27,7 +27,7 @@ public class Luggage : MonoBehaviour
             if (AtLuggage == true)
             {
                 death.Died("That Suitcase had a bomb in it- did you not know that?");
-                Object.Destroy(this.gameObject);
+                //Object.Destroy(this.gameObject);
             }
         }
     }

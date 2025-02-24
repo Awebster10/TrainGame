@@ -28,7 +28,7 @@ public class BoringBook : MonoBehaviour
             if (AtBook == true)
             {
                 death.Died("That book was so boring it literally killed you. Haha fancy the odds of that");
-                Object.Destroy(this.gameObject);
+                //Object.Destroy(this.gameObject);
             }
         }
     }

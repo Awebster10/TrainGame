@@ -961,7 +961,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 673382757}
         m_TargetAssemblyTypeName: Death, Assembly-CSharp
-        m_MethodName: Reset
+        m_MethodName: Restart
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1458,6 +1458,7 @@ MonoBehaviour:
   ISit: 0
   keyPress: {fileID: 586845533}
   Message: {fileID: 1931405163}
+  Bird: {fileID: 0}
 --- !u!1 &680780632
 GameObject:
   m_ObjectHideFlags: 0

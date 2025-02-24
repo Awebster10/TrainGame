@@ -31,7 +31,7 @@ public class Cherry : MonoBehaviour
             if (AtCherry == true)
             {
                 HasCherry = true;
-                Object.Destroy(this.gameObject);
+                this.gameObject.SetActive(false);
                 InteractiveMessage.DisplayMessage("You didnt want to eat the lovely cherry? Thats fine I guess, you may need it later...");
             }
         }
@@ -39,7 +39,7 @@ public class Cherry : MonoBehaviour
         {
             if (AtCherry == true)
             {
-                Object.Destroy(this.gameObject);
+                //Object.Destroy(this.gameObject);
                 death.Died("Why on earth would you eat a random berry you found? Anyway yeah it messed your insides out- your dead buddy.");
             }
         }

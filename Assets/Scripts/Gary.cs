@@ -9,6 +9,7 @@ public class Gary : MonoBehaviour
     public KeyPress keyPress;
 
     public bool AtGary;
+    public bool GaryAsleep;
 
     void OnTriggerStay2D(Collider2D collision)
     {
@@ -28,7 +29,10 @@ public class Gary : MonoBehaviour
         {
             if(AtGary)
             {
-                interactiveMessage.DisplayMessage("...");
+                if (!GaryAsleep)
+                {
+                    interactiveMessage.DisplayMessage("You got any dope? God I love drugs");
+                }
             }
         }
     }

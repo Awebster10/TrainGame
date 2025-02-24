@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System.Windows.Input;
 
-public class ADog : MonoBehaviour
+public class Dog : MonoBehaviour
 {
     public bool AtDog = false;
     public bool IsDogDead;
@@ -15,6 +15,7 @@ public class ADog : MonoBehaviour
     public Death death;
     public InteractiveMessage InteractiveMessage;
     public KeyPress keyPress;
+    public Dog DogScript;
 
     void OnTriggerStay2D(Collider2D collision)
     {
@@ -48,8 +49,10 @@ public class ADog : MonoBehaviour
                 else
                 {
                     IsDogDead = true;
+                    InteractiveMessage.DisplayMessage("That dog is really munching on that bird jeez... maybe you can get past him now");
                     keyPress.RemoveMessage();
                     Border.SetActive(false);
+                    DogScript.enabled = false;
                 }
             }
             

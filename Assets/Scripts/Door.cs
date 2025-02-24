@@ -8,6 +8,7 @@ public class Door : MonoBehaviour
     public KeyPress keyPress;
     public GameObject Player;
     public Gary gary;
+    public Death death;
 
     public bool AtDoor;
     public int WhichLevel;
@@ -38,6 +39,17 @@ public class Door : MonoBehaviour
                 else if (WhichLevel == 1)
                 {
                     Player.transform.position = new Vector3(-24.0499992f, 18.7074757f, -2.84529996f);
+                }
+                else if (WhichLevel == 2)
+                {
+                    if(!gary.HasWrench)
+                    {
+                        death.Died("You went out the carraige and couldnt get past the carraige connector- trying to get back you slipped off the train");
+                    }
+                    else
+                    {
+                        Debug.Log("WON");
+                    }
                 }
             }
         }

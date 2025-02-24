@@ -47,6 +47,7 @@ public class Bird : MonoBehaviour
                     else
                     {
                         IsBirdDead = true;
+                        InteractiveMessage.DisplayMessage("Holy crap! that bird just died cos of the berries. Imagine if you had eaten them...");
                         Message.text = ("Press E to pick up Bird Cage");
                         animator.SetBool("BirdDead", true);
                     }

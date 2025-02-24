@@ -3,19 +3,32 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
+using System;
 
 public class Gary : MonoBehaviour
 {
     public InteractiveMessage interactiveMessage;
     public Movement movement;
     public GameObject PaintingUI;
+    public GameObject Painting;
+    public GameObject Ticket;
     public KeyPress keyPress;
     public TMP_InputField Code;
+    public Animator animator;
 
     public bool AtGary;
     public bool GaryAwake;
-    public string TheCode = "1385";
+    public string TheCode;
+    public bool GaryDead;
+    public bool HasWrench;
+    
 
+
+    public void Start()
+    {
+        int temp = UnityEngine.Random.Range(1001, 9999);
+        TheCode = temp.ToString();
+    }
     void OnTriggerStay2D(Collider2D collision)
     {
         AtGary = true;
@@ -34,14 +47,22 @@ public class Gary : MonoBehaviour
         {
             if(AtGary)
             {
-                if (GaryAwake)
+                if (!GaryDead)
                 {
-                    interactiveMessage.DisplayMessage("You got any dope? God I love drugs");
+                    if (GaryAwake)
+                    {
+                        interactiveMessage.DisplayMessage("You got any dope? God I love drugs");
 
+                    }
+                    else
+                    {
+                        interactiveMessage.DisplayMessage("ZZZ...ZZZ...ZZZ");
+                    }
                 }
                 else
                 {
-                    interactiveMessage.DisplayMessage("ZZZ...ZZZ...ZZZ");
+                    interactiveMessage.DisplayMessage("You found a wrench in his pocket? I hear they're good for like detatching train crraiges for example");
+                    HasWrench = true;
                 }
             }
         }
@@ -49,7 +70,7 @@ public class Gary : MonoBehaviour
         {
             if (AtGary)
             {
-                if (!GaryAwake)
+                if (GaryAwake)
                 {
                     PaintingUI.SetActive(true);
                     movement.enabled = false;
@@ -64,6 +85,11 @@ public class Gary : MonoBehaviour
             Debug.Log("Correct");
             PaintingUI.SetActive(false);
             movement.enabled = true;
+            animator.SetBool("GaryDead", true);
+            Painting.SetActive(false);
+            Ticket.SetActive(true);
+            interactiveMessage.DisplayMessage("A ticket fell from behind that pinting that fell! What a coincidence");
+            GaryDead = true;
         }
         else
         {

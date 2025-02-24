@@ -16,6 +16,8 @@ public class TicketInspector : MonoBehaviour
     public InteractiveMessage InteractiveMessage;
 
     public AudioSource Glass;
+    public GameObject Border;
+    public TicketInspector Script;
 
     void OnTriggerStay2D(Collider2D collision)
     {
@@ -51,9 +53,9 @@ public class TicketInspector : MonoBehaviour
                     }
                     else
                     {
-                    Debug.Log("Level Passed");
-                    SceneManager.LoadScene(1);
-                }
+                        Border.SetActive(false);
+                        Script.enabled = false;
+                    }
                 }
             }
     }

@@ -12,15 +12,18 @@ public class Gary : MonoBehaviour
     public GameObject PaintingUI;
     public GameObject Painting;
     public GameObject Ticket;
+    public GameObject Wrench;
     public KeyPress keyPress;
     public TMP_InputField Code;
     public Animator animator;
+    public Gary gary;
 
     public bool AtGary;
     public bool GaryAwake;
     public string TheCode;
     public bool GaryDead;
     public bool HasWrench;
+    private string Message = "Press E to talk to Gary";
     
 
 
@@ -32,7 +35,7 @@ public class Gary : MonoBehaviour
     void OnTriggerStay2D(Collider2D collision)
     {
         AtGary = true;
-        keyPress.DisplayMessage("Press E to talk to Gary");
+        keyPress.DisplayMessage(Message);
     }
 
     void OnTriggerExit2D(Collider2D collision)
@@ -61,8 +64,8 @@ public class Gary : MonoBehaviour
                 }
                 else
                 {
-                    interactiveMessage.DisplayMessage("You found a wrench in his pocket? I hear they're good for like detatching train crraiges for example");
-                    HasWrench = true;
+                    Wrench.SetActive(true);
+                    gary.enabled = false;
                 }
             }
         }
@@ -90,10 +93,11 @@ public class Gary : MonoBehaviour
             Ticket.SetActive(true);
             interactiveMessage.DisplayMessage("A ticket fell from behind that pinting that fell! What a coincidence");
             GaryDead = true;
+            Message = "Press E to Search Garys body";
         }
         else
         {
-            Debug.Log("Wrong");
+            interactiveMessage.DisplayMessage("Nothing Happened- Maybe you got it wrong?");
             PaintingUI.SetActive(false);
             movement.enabled = true;
         }

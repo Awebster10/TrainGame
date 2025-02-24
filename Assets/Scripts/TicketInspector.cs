@@ -48,12 +48,12 @@ public class TicketInspector : MonoBehaviour
                         {
                             death.Died("The Inspector doesnt take nicely to people boarding without a ticket. He thre you out a window. Bit brutal aint it?");
                             Glass.Play();
-                            //Object.Destroy(this.gameObject);
                         }
                     }
                     else
                     {
                         Border.SetActive(false);
+                        InteractiveMessage.DisplayMessage("He accepted the ticket an dis now actually letting you through! He must be new");
                         Script.enabled = false;
                     }
                 }

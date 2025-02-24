@@ -7,6 +7,7 @@ public class Door : MonoBehaviour
 {
     public KeyPress keyPress;
     public GameObject Player;
+    public Gary gary;
 
     public bool AtDoor;
     public int WhichLevel;
@@ -32,6 +33,7 @@ public class Door : MonoBehaviour
                 if (WhichLevel == 0)
                 {
                     Player.transform.position = new Vector3(-9.89999962f, -1.5f, -2.84529996f);
+                    gary.GaryAwake = true;
                 }
                 else if (WhichLevel == 1)
                 {

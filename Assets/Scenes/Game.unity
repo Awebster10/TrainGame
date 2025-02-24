@@ -2060,6 +2060,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   keyPress: {fileID: 768877202}
   Player: {fileID: 1170638220}
+  gary: {fileID: 719537216}
   AtDoor: 0
   WhichLevel: 1
 --- !u!61 &694009565
@@ -2208,6 +2209,7 @@ MonoBehaviour:
   interactiveMessage: {fileID: 12483309}
   keyPress: {fileID: 768877202}
   AtGary: 0
+  GaryAsleep: 0
 --- !u!61 &719537217
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5682,6 +5684,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   keyPress: {fileID: 768877202}
   Player: {fileID: 1170638220}
+  gary: {fileID: 719537216}
   AtDoor: 0
   WhichLevel: 0
 --- !u!61 &1807117539

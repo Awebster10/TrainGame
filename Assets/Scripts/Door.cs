@@ -6,6 +6,8 @@ using UnityEngine.SceneManagement;
 public class Door : MonoBehaviour
 {
     public KeyPress keyPress;
+    public GameObject dog;
+    public GameObject Player;
 
     public bool AtDoor;
     public int WhichLevel;
@@ -28,7 +30,9 @@ public class Door : MonoBehaviour
         {
             if (AtDoor)
             {
+                dog.SetActive(false);
                 SceneManager.LoadScene(WhichLevel);
+                Player.transform.position = new Vector3(-16.6399994f, 0.419999987f, -2.82740283f);
             }
         }
     }

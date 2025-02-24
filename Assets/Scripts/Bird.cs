@@ -10,6 +10,7 @@ public class Bird : MonoBehaviour
     public bool AtBird = false;
     public bool IsBirdDead = false;
     public bool HasBird = false;
+    public GameObject TheBird;
 
     public Animator animator;
 
@@ -53,7 +54,7 @@ public class Bird : MonoBehaviour
             }
             else
             {
-                Object.Destroy(this.gameObject);
+                TheBird.SetActive(false);
                 InteractiveMessage.DisplayMessage("You have picked up a dead bird... Well done? Its said some animals like the taste of birds you know ...");
                 HasBird = true;
             }

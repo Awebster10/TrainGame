@@ -16,6 +16,10 @@ public class ADog : MonoBehaviour
     public InteractiveMessage InteractiveMessage;
     public KeyPress keyPress;
 
+    public void OnAwake()
+    {
+        
+    }
     void OnTriggerStay2D(Collider2D collision)
     {
         if (IsDogDead == false)

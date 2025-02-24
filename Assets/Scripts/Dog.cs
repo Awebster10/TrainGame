@@ -9,6 +9,7 @@ public class ADog : MonoBehaviour
     public bool IsDogDead;
 
     public Animator animator;
+    public GameObject Border;
 
     public Bird bird;
     public Death death;
@@ -22,7 +23,7 @@ public class ADog : MonoBehaviour
             keyPress.DisplayMessage("Press E to Interact with Dog");
             AtDog = true;
         }
-       }
+    }
 
     void OnTriggerExit2D(Collider2D collision)
     {
@@ -48,6 +49,7 @@ public class ADog : MonoBehaviour
                 {
                     IsDogDead = true;
                     keyPress.RemoveMessage();
+                    Border.SetActive(false);
                 }
             }
             

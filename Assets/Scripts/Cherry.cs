@@ -2,11 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System.Windows.Input;
+using TMPro;
 
 public class Cherry : MonoBehaviour
 {
     public bool AtCherry = false;
     public bool HasCherry = false;
+    public string Message = ("Press E to Pick up the Berry or Press F to eat The Berry");
 
     public Death death;
     public KeyPress keyPress;
@@ -14,7 +16,7 @@ public class Cherry : MonoBehaviour
 
     void OnTriggerStay2D(Collider2D collision)
     {
-        keyPress.DisplayMessage("Press E to Pick up the Berry or Press F to eat The Berry");
+        keyPress.DisplayMessage(Message);
         AtCherry = true;
     }
 
@@ -31,8 +33,8 @@ public class Cherry : MonoBehaviour
             if (AtCherry == true)
             {
                 HasCherry = true;
-                this.gameObject.SetActive(false);
                 InteractiveMessage.DisplayMessage("You didnt want to eat the lovely cherry? Thats fine I guess, you may need it later...");
+                Message = ("Press F to eat the Berry");
             }
         }
         else if (Input.GetKeyDown(KeyCode.F))

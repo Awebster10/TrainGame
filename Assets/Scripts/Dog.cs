@@ -16,10 +16,6 @@ public class ADog : MonoBehaviour
     public InteractiveMessage InteractiveMessage;
     public KeyPress keyPress;
 
-    public void OnAwake()
-    {
-        
-    }
     void OnTriggerStay2D(Collider2D collision)
     {
         if (IsDogDead == false)
@@ -46,7 +42,7 @@ public class ADog : MonoBehaviour
             {
                 if (bird.HasBird == false)
                 {
-                    Object.Destroy(this.gameObject);
+                    //Object.Destroy(this.gameObject);
                     death.Died("That is one mean dog that just ripped into your body, I bet it's called princess or something...");
                 }
                 else

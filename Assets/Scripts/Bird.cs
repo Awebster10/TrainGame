@@ -19,14 +19,6 @@ public class Bird : MonoBehaviour
     public InteractiveMessage InteractiveMessage;
     public KeyPress keyPress;
 
-    public void Reset()
-    {
-        IsBirdDead=false;
-        animator.SetBool("BirdDead", false);
-        HasBird=false;
-        this.gameObject.SetActive(true);
-    }
-
     void OnTriggerStay2D(Collider2D collision)
     {
         keyPress.DisplayMessage("Press E to Interact with Bird");
@@ -43,7 +35,6 @@ public class Bird : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.E))
         {
-
             if (AtBird == true)
             {
                 if (!IsBirdDead)

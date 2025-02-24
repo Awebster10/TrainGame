@@ -46,7 +46,7 @@ public class TicketInspector : MonoBehaviour
                         {
                             death.Died("The Inspector doesnt take nicely to people boarding without a ticket. He thre you out a window. Bit brutal aint it?");
                             Glass.Play();
-                            Object.Destroy(this.gameObject);
+                            //Object.Destroy(this.gameObject);
                         }
                     }
                     else

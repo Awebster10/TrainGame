@@ -8,7 +8,6 @@ public class Death : MonoBehaviour
 {
     public GameObject DeathScreen;
     public Movement movement;
-    public bool ISit;
     public KeyPress keyPress;
     public TextMeshProUGUI Message;
 

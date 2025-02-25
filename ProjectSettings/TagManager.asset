@@ -42,15 +42,3 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: NewPlayer
-    uniqueID: 3288347805
-    locked: 0
-  - name: furniture
-    uniqueID: 1483195983
-    locked: 0
-  - name: OldPlayer
-    uniqueID: 3239474473
-    locked: 0
-  - name: New Layer 1
-    uniqueID: 1642488403
-    locked: 0

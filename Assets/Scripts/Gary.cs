@@ -46,6 +46,7 @@ public class Gary : MonoBehaviour
 
     public void Update()
     {
+        if (GaryAwake) { Message = "Press E to talk to Gary or Press F look at the suspicious painting"; }
         if (Input.GetKeyDown(KeyCode.E))
         {
             if(AtGary)

@@ -42,3 +42,36 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Sky
+    uniqueID: 422337603
+    locked: 0
+  - name: BackgroundHills
+    uniqueID: 1313291965
+    locked: 0
+  - name: BackgroundTree
+    uniqueID: 309470301
+    locked: 0
+  - name: Clouds
+    uniqueID: 3079175303
+    locked: 0
+  - name: ForegroundHill
+    uniqueID: 856248177
+    locked: 0
+  - name: ForegroundTree
+    uniqueID: 3085955727
+    locked: 0
+  - name: TrainBackground
+    uniqueID: 133013253
+    locked: 0
+  - name: Train
+    uniqueID: 3651558205
+    locked: 0
+  - name: Chairs
+    uniqueID: 1065988405
+    locked: 0
+  - name: Player
+    uniqueID: 1664878211
+    locked: 0
+  - name: Furniture
+    uniqueID: 2363521571
+    locked: 0

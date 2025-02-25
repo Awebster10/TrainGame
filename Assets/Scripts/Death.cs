@@ -10,7 +10,7 @@ public class Death : MonoBehaviour
     public Movement movement;
     public KeyPress keyPress;
     public TextMeshProUGUI Message;
-
+    public AudioSource trainsound;
     public Bird Bird;
 
     public void Died(string TheMessage)
@@ -19,6 +19,7 @@ public class Death : MonoBehaviour
         Message.text = TheMessage;
         DeathScreen.SetActive(true);
         movement.enabled = false;
+        trainsound.Stop();
     }
 
     public void Restart()

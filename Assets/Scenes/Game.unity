@@ -2655,6 +2655,8 @@ GameObject:
   m_Component:
   - component: {fileID: 360137360}
   - component: {fileID: 360137361}
+  - component: {fileID: 360137362}
+  - component: {fileID: 360137363}
   m_Layer: 0
   m_Name: sidetable+phone_right
   m_TagString: Untagged
@@ -2729,6 +2731,71 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &360137362
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 360137359}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4630a73c3fcdbdb42901976df1d963b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AtHint: 0
+  interactiveMessage: {fileID: 12483309}
+  keyPress: {fileID: 768877202}
+  Bird: {fileID: 1133460592}
+  cherry: {fileID: 1263577437}
+  dog: {fileID: 746582116}
+  gary: {fileID: 719537216}
+  ticketInspector: {fileID: 807338679}
+--- !u!61 &360137363
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 360137359}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.16, y: 1.38}
+    newSize: {x: 1.08, y: 1.14}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.16, y: 1.38}
+  m_EdgeRadius: 0
 --- !u!1 &379588534
 GameObject:
   m_ObjectHideFlags: 0
@@ -4202,6 +4269,7 @@ MonoBehaviour:
   TheCode: 
   GaryDead: 0
   HasWrench: 0
+  LookForCode: 0
 --- !u!61 &719537217
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8028,7 +8096,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1140007451}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -33.36, y: 19.88, z: 0.0089485645}
+  m_LocalPosition: {x: -34.2, y: 19.54, z: 0.0089485645}
   m_LocalScale: {x: 0.16031, y: 0.16031, z: 0.16031}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -11789,7 +11857,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1938019874}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -15.64, y: 19.146172, z: -0.05922222}
+  m_LocalPosition: {x: -15.16, y: 19.13, z: -0.05922222}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

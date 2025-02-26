@@ -22,9 +22,9 @@ public class EmptyLuggage : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E))
+        if (AtLuggage == true)
         {
-            if (AtLuggage == true)
+            if (Input.GetKeyDown(KeyCode.E))
             {
                 interactiveMessage.DisplayMessage("That suitcase is just full of clothes. Bit of privacy please");
             }

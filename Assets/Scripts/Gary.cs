@@ -23,6 +23,7 @@ public class Gary : MonoBehaviour
     public string TheCode;
     public bool GaryDead;
     public bool HasWrench;
+    public bool LookForCode;
     private string Message = "Press E to talk to Gary";
     
 
@@ -46,7 +47,8 @@ public class Gary : MonoBehaviour
 
     public void Update()
     {
-        if (GaryAwake) { Message = "Press E to talk to Gary or Press F look at the suspicious painting"; }
+        if (GaryAwake && !GaryDead) { Message = "Press E to talk to Gary or Press F look at the suspicious painting"; }
+        else if(GaryAwake && GaryDead) { Message = "Press E to Search Garys body"; }
         if (Input.GetKeyDown(KeyCode.E))
         {
             if(AtGary)
@@ -78,6 +80,7 @@ public class Gary : MonoBehaviour
                 {
                     PaintingUI.SetActive(true);
                     movement.enabled = false;
+                    LookForCode = true;
                 }
             }
         }
@@ -94,7 +97,7 @@ public class Gary : MonoBehaviour
             Ticket.SetActive(true);
             interactiveMessage.DisplayMessage("A ticket fell from behind that pinting that fell! What a coincidence");
             GaryDead = true;
-            Message = "Press E to Search Garys body";
+            
         }
         else
         {

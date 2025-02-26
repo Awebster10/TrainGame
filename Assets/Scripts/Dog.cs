@@ -51,6 +51,7 @@ public class Dog : MonoBehaviour
                     IsDogDead = true;
                     InteractiveMessage.DisplayMessage("That dog is really munching on that bird jeez... maybe you can get past him now");
                     keyPress.RemoveMessage();
+                    animator.SetBool("DogIdle", true);
                     Border.SetActive(false);
                     DogScript.enabled = false;
                 }

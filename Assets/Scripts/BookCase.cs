@@ -22,11 +22,14 @@ public class BookCase : MonoBehaviour
     }
 
     void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.E))
+    {   
+        if (AtBook == true)
         {
-            boringBook.SetActive(true);
-            this.enabled = false;
+            if (Input.GetKeyDown(KeyCode.E))
+            {
+                boringBook.SetActive(true);
+                this.enabled = false;
+            }
         }
     }
 }

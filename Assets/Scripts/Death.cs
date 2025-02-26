@@ -24,6 +24,11 @@ public class Death : MonoBehaviour
 
     public void Restart()
     {
+        SceneManager.LoadScene(1);
+    }
+
+    public void Quit()
+    {
         SceneManager.LoadScene(0);
     }
 }

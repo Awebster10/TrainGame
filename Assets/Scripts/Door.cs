@@ -12,6 +12,7 @@ public class Door : MonoBehaviour
 
     public bool AtDoor;
     public int WhichLevel;
+    public GameObject WinScreen;
 
     void OnTriggerStay2D(Collider2D collision)
     {
@@ -48,7 +49,7 @@ public class Door : MonoBehaviour
                     }
                     else
                     {
-                        Debug.Log("WON");
+                        WinScreen.SetActive(true);
                     }
                 }
             }

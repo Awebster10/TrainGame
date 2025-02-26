@@ -53,7 +53,7 @@ public class TicketInspector : MonoBehaviour
                     else
                     {
                         Border.SetActive(false);
-                        InteractiveMessage.DisplayMessage("He accepted the ticket an dis now actually letting you through! He must be new");
+                        InteractiveMessage.DisplayMessage("He accepted the ticket and is now actually letting you through! He must be new");
                         Script.enabled = false;
                     }
                 }

@@ -43,7 +43,7 @@ public class Hint_System : MonoBehaviour
                 }
                 else if (Bird.HasBird && !dog.IsDogDead)
                 {
-                    interactiveMessage.DisplayMessage("DOgs like the taste of birds right? Maybe it'll distract it.");
+                    interactiveMessage.DisplayMessage("Dogs like the taste of birds right? Maybe it'll distract it.");
                 }
                 else if (dog.IsDogDead && gary.GaryAwake && !gary.LookForCode)
                 {
